@@ -46,7 +46,6 @@ select, input {
     font-size: 16px;
     color: #555555;
     cursor: pointer;
-    /*appearance: none; ==> serve para ocultar a seta do campo de opções*/
 }
 
 button {
@@ -95,13 +94,18 @@ section {
     gap: 1px;
 }
 
+.currency-box img{
+    width: 50px;
+    height: 50px;
+}
+
 .currency{
     font-weight: 400;
     font-size: 14px;
     color: #777777;
 }
 
-.currency-value, .currency-value-to-convert{
+.currency-value-to-convert, .currency-value-converted{
     color: #555555;
     font-weight: 700;
     font-size: 20px;

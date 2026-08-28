@@ -12,51 +12,49 @@
 <body>
     <img src="./assets/logo.gif" alt="logo-devclub-convert-money" class="logo">
     <main>
-        <label>
-            Converter <b>de</b>
-            <select class="currency-select2">
-                <option value="real">R$ Real Brasileiro</option>
-                <!-- <option value="dolar">US$ Dólar Americano</option>
-                <option value="euro">€ Euro</option>
-                <option value="libra">£ Libra</option>
-                <option value="bitcoin">₿ Bitcoin</option>-->
+        <label for="moedaOrigem">Converter <b>de:</b>
+            <select name="moeda" id="moedaOrigem">
+                <option value="real">R$ Real</option>
+                <!-- <option value="dolar">US$ Dólar</option>
+            <option value="euro">€ Euro</option>
+            <option value="libra">£ Libra</option>
+            <option value="iene">¥ Iene</option>
+            <option value="bitcoin">BTC Bitcoin</option> -->
             </select>
         </label>
 
-        <label>
-            Converter <b>para</b>
-            <select class="currency-select">
-
-                <option value="dolar">US$ Dólar Americano</option>
+        <label for="moedaDestino">Converter <b>para:</b>
+            <select name="moeda" id="moedaDestino" class="selectCurrencyToConvert">
+                <!-- <option value="real">R$ Real</option> -->
+                <option value="dolar">US$ Dólar</option>
                 <option value="euro">€ Euro</option>
                 <option value="libra">£ Libra</option>
-                <option value="bitcoin">₿ Bitcoin</option>
-                <!--<option value="real">R$ Real Brasileiro</option>-->
+                <option value="iene">¥ Iene</option>
+                <option value="bitcoin">BTC Bitcoin</option>
             </select>
         </label>
 
-        <label>
-            Valor
-            <input class="input-currency" placeholder="R$ 10.000,00">
+
+        <label for="valor">Valor:
+            <input type="number" placeholder="R$ 10.000,00" class="inputCurrencyValue" step="0.01" min="0">
         </label>
 
         <button class="convert-button">Converter</button>
 
         <section>
             <div class="currency-box">
-                <img class="currency-img2" src="./assets/real.png" alt="logo-moeda-a-converter">
-                <p class="currency" id="currency-name2">Real</p>
-                <p class="currency-value-to-convert">R$ 0,00</p>
+                <img src="./assets/real.png" alt="logo moeda a converter">
+                <p class="currency-name">Real</p>
+                <h3 class="currency-value-to-convert">R$ 0,00</h3>
             </div>
 
             <img src="./assets/arrow.png" alt="seta" class="arrow-img">
 
             <div class="currency-box">
-                <img class="currency-img" src="./assets/dolar.png" alt="logo-moeda-convertida">
-                <p class="currency" id="currency-name">Dólar Americano</p>
-                <p class="currency-value">US$ 0.0</p>
+                <img src="./assets/dolar.png" alt="logo moeda convertida" class="cvcImage">
+                <p class="currency-name cvcName">Dólar</p>
+                <h3 class="currency-value-converted">US$ 0,00</h3>
             </div>
-
 
         </section>
     </main>
