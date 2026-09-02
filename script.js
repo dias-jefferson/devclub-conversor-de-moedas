@@ -53,50 +53,7 @@ function convertValues() {
 
     const moedaConvertida = inputCurrencyValue / moeda.valor // realiza a conversão do valor do real para a moeda selecionada
 
-    //const realToday = 1
-    // const dolarToday = 5.2
-    // const euroToday = 6.2
-    // const poundToday = 6.5
-    // const yenToday = 0.038
-    // const bitcoinToday = 100
 
-
-    // switch (currencySelect.value) {
-    //     case "dolar":
-    //         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-    //             style: "currency",
-    //             currency: "USD"
-    //         }).format(moedaConvertida)
-    //         break;
-
-    //     case "euro":
-    //         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-    //             style: "currency",
-    //             currency: "EUR"
-    //         }).format(moedaConvertida)
-    //         break;
-
-    //     case "libra":
-    //         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
-    //             style: "currency",
-    //             currency: "GBP"
-    //         }).format(moedaConvertida)
-    //         break;
-
-    //     case "iene":
-    //         currencyValueConverted.innerHTML = new Intl.NumberFormat("ja-JP", {
-    //             style: "currency",
-    //             currency: "JPY"
-    //         }).format(moedaConvertida)
-    //         break;
-
-    //     case "bitcoin":
-    //         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-    //             style: "currency",
-    //             currency: "BTC"
-    //         }).format(moedaConvertida)
-    //         break;
-    //     }
 
     //formatação da moeda a ser convertida, no caso aqui o real brasileiro
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -119,28 +76,7 @@ function changeCurrency() {
     currencyName.innerHTML = moeda.nome // atualiza o nome da moeda convertida
     currencyImage.src = moeda.imagem // atualiza a imagem da moeda convertida
 
-    // switch (currencySelect.value) {
-    //     case "dolar":
-    //         currencyName.innerHTML = "Dólar"
-    //         currencyImage.src = "./assets/dolar.png"
-    //         break;
-    //     case "euro":
-    //         currencyName.innerHTML = "Euro"
-    //         currencyImage.src = "./assets/euro.png"
-    //         break;
-    //     case "libra":
-    //         currencyName.innerHTML = "Libra Esterlina"
-    //         currencyImage.src = "./assets/libra.png"
-    //         break;
-    //     case "iene":
-    //         currencyName.innerHTML = "Iene Japonês"
-    //         currencyImage.src = "./assets/iene.png"
-    //         break;
-    //     case "bitcoin":
-    //         currencyName.innerHTML = "Bitcoin"
-    //         currencyImage.src = "./assets/bitcoin.png"
-    //         break;
-    // }
+ 
 
     convertValues() // Chama a função de conversão para atualizar os valores quando a moeda for alterada
 }
